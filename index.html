@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+      <link rel="stylesheet" href="style.css">
+    <title>
+      Лабораторная 2, 5 вариант, Федотов И.Р., КИУКИ 17-5
+    </title>
+    <style>
+    .test4{
+      float: right;
+      color: green;
+  height: 5em;
+  width: 300px;
+    }
+#container{
+  width: 400px;
+  height: auto;
+  margin: 5em auto;
+}
+.accordion label {
+  display:block;
+  background-color: #eeeeee;
+  padding: 0 15px;
+  height: 3em;
+  line-height: .5em;
+  color: #555555;
+  cursor: pointer;
+  border-bottom: 2px solid #bbbbbb;
+  border-top: 1px solid #bbbbbb;
+  font-size: 0.8em;
+  text-align: center;
+  border-radius: 5px;
+}
+.accordion p {
+  color: #000000;
+  padding: 10px;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  opacity: 0;
+  display: none;
+  text-align: left;
+  background-color: #fff;
+  margin: 0px;
+   border-bottom: 1px solid #bbbbbb;
+    border-right: 2px solid #eeeeee;
+     border-left: 2px solid #eeeeee;
+}
+#tm:checked ~ .hiddentext {
+  display: block;
+  opacity: 1;
+}
+input#tm {
+  display: none;
+  position: relative;
+}
+#tn:checked ~ .hiddentext {
+  display: block;
+  opacity: 1;
+}
+input#tn {
+  display: none;
+  position: relative;
+}
+#to:checked ~ .hiddentext {
+  display: block;
+  opacity: 1;
+}
+input#to {
+  display: none;
+  position: relative;
+}
+.arrow{
+  color: #666666;
+}
+</style>
+  </head>
+  <body>
+  <div id="container">
+  <div class="accordion">
+    <label for="tm" class="accordionitem"><h2>Introduction</h2></label>
+    <input type="checkbox" id="tm"/>
+    <p class="hiddentext">This is introduction.</p>
+  </div>
+  
+  <div class="accordion">
+    <label for="tn" class="accordionitem"><h2>General information</h2></label>
+    <input type="checkbox" id="tn"/>
+    <p class="hiddentext">This is general information.</p>
+  </div>
+  
+  <div class="accordion">
+    <label for="to" class="accordionitem"><h2>Contuct us</h2></label>
+    <input type="checkbox" id="to"/>
+    <p class="hiddentext">If you want to contuct us, just scream loudly.</p>
+  </div>
+</div>  
+<p class="test"> test </p>
+<p style="color:blue; background-color:red;">test2</p>
+<div id="test3">test3 </div>
+<div class="test4">
+   (test4) Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+   euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+  </div>
+<div class="test4">
+   (test4) Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+   euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+  </div>
+<div class="test4">
+   (test4) Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+   euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+  </div>
+  </body>
+</html>
